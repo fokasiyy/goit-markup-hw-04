@@ -36,6 +36,8 @@ p {
 }
 .page-header {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
 }
 .header-nav {
   display: flex;
@@ -58,6 +60,7 @@ p {
 .nav-link {
   padding: 24px 0;
   display: block;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts {
   margin-left: auto;
@@ -65,12 +68,13 @@ p {
 .contacts-link {
   display: block;
   padding: 24px 0;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-link.current {
   position: relative;
 }
-.nav-link.current ::before {
-  content: '';
+.nav-link.current::after {
+  content: "";
   position: absolute;
   left: 0;
   bottom: -1px;
@@ -150,6 +154,16 @@ p {
   background-color: #2e2f42;
   padding: 188px 0;
   gap: 48px;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office.jpg);
+  max-width: 1440px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto;
 }
 .logo-main {
   display: block;
@@ -166,8 +180,19 @@ p {
   min-width: 169px;
   height: 56px;
   border-radius: 4px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /*mail two*/
+.nautius {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 112px;
+  background-color: #f4f4fd;
+  border-radius: 4px;
+  border: 1px solid #8e8f99;
+  margin-bottom: 8px;
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
