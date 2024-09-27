@@ -194,10 +194,7 @@ p {
   border: 1px solid #8e8f99;
   margin-bottom: 8px;
 }
-.nautius-svg {
-  width: 64px;
-  height: 64px;
-}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -233,6 +230,8 @@ p {
 .container-foto {
   display: flex;
   gap: 24px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .section-foto {
   border-radius: 0px 0px 4px 4px;
@@ -247,6 +246,28 @@ p {
 }
 .section-job {
   text-align: center;
+}
+.socciti {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+.socciti-info {
+  width: 40px;
+  height: 40px;
+}
+.socciti-foto {
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.socciti-foto:hover,
+.socciti-foto:focus {
+  background-color: #404bbf;
 }
 /*main free*/
 .container-free {
