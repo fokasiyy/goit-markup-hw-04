@@ -66,6 +66,18 @@ p {
   display: block;
   padding: 24px 0;
 }
+.nav-link.current {
+  position: relative;
+}
+.nav-link.current ::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 4px;
+  background-color: #404bbf;
+}
 /*Header stale*/
 .logo {
   font-family: "Raleway", sans-serif;
@@ -100,7 +112,8 @@ p {
 .nav-link:hover,
 .nav-link:focus,
 .contacts-link:hover,
-.contacts-link:focus {
+.contacts-link:focus,
+.nav-link.current {
   color: #404bbf;
 }
 /* footer ops*/
