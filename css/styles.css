@@ -177,12 +177,18 @@ p {
   align-items: center;
   justify-content: center;
 }
-.socciti-red-foto:hover,
+.socciti-red-foto:hover {
+  background-color: #31d0aa;
+}
 .socciti-red-foto:focus {
   background-color: #31d0aa;
 }
+
 .unitolog {
   fill: #f4f4fd;
+}
+.socciti-info {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /*main*/
 .fotoim {
@@ -280,6 +286,8 @@ p {
 .section-foto {
   border-radius: 0px 0px 4px 4px;
   width: calc((100% - 72px) / 4);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .info-job {
   padding: 32px 0;
@@ -316,6 +324,9 @@ p {
 }
 .socciti-grup {
   fill: #f4f4fd;
+}
+.socciti-fun {
+  padding: 32px 0;
 }
 /*main free*/
 .container-free {
