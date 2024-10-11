@@ -177,9 +177,7 @@ p {
   align-items: center;
   justify-content: center;
 }
-.socciti-red-foto:hover {
-  background-color: #31d0aa;
-}
+.socciti-red-foto:hover,
 .socciti-red-foto:focus {
   background-color: #31d0aa;
 }
@@ -188,7 +186,7 @@ p {
   fill: #f4f4fd;
 }
 .socciti-info {
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /*main*/
 .fotoim {
@@ -299,7 +297,7 @@ p {
 .section-job {
   text-align: center;
 }
-.socciti {
+.socciti-fun-infoc {
   display: flex;
   justify-content: center;
   gap: 24px;
